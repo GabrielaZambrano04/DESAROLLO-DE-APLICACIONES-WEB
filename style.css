@@ -1,0 +1,207 @@
+/* Configuración general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f0ff;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* CABECERA */
+.caja-cabecera{
+    background: linear-gradient(135deg, #000000, #5e3a87);
+    color: white;
+    text-align: center;
+    padding: 35px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.titulo-principal{
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+/* MENÚ */
+.caja-navegacion{
+    margin-top: 15px;
+}
+
+.caja-items{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.caja-items a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.caja-items a:hover{
+    background-color: #d6b3ff;
+    color: black;
+}
+
+/* CONTENIDO */
+.caja-main{
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* SECCIONES */
+.caja-section-categoria{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(94,58,135,0.15);
+    transition: 0.3s;
+}
+
+.caja-section-categoria:hover{
+    transform: translateY(-3px);
+}
+
+/* TITULOS */
+h2{
+    color: #5e3a87;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+h3{
+    color: #3d2358;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-left: 5px solid #b57aff;
+    padding-left: 10px;
+}
+
+/* PÁRRAFOS */
+p{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* IMÁGENES */
+img{
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+img:hover{
+    transform: scale(1.03);
+}
+
+/* MENÚ DE PRODUCTOS */
+.menu-productos{
+    margin: 25px 0;
+}
+
+.menu-productos ul{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu-productos a{
+    text-decoration: none;
+    background: #5e3a87;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu-productos a:hover{
+    background: #d6b3ff;
+    color: black;
+}
+
+/* ASIDE */
+.caja-aside{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    background: linear-gradient(135deg, #5e3a87, #8f5fd7);
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+}
+
+.caja-aside h3{
+    color: white;
+    border: none;
+    padding: 0;
+}
+
+/* FOOTER */
+.caja-footer{
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.caja-footer h2{
+    color: #d6b3ff;
+}
+
+.caja-footer a{
+    color: #d6b3ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.caja-footer a:hover{
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+
+    .titulo-principal{
+        font-size: 30px;
+    }
+
+    .caja-items{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-productos ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+}
